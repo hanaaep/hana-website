@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
+*{
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	font-family: 'Poppins' , sans-serif;
+	color: white;
+}
+
+body{
+	background: #a1c4dc;
+    background-size: cover;
+    background-position: center;
+	
+}
+
+.header{
+	height: 100vh;
+	width : 100%;
+}
+
+.navbar
+{
+	padding: 15px 18px !important;
+}
+
+.logo{
+	font-weight: 600;
+	color: rgb(12 14 65) !important;
+}
+
+.nav-item
+{
+	margin: 0px 10px;
+
+}
+.nav-item .nav-link
+{
+	color: rgb(0 78 131);
+	font-size: 14px;
+	font-weight: 500;
+	position: relative;
+}
+
+.nav-link::after{
+	content: '';
+	position:absolute;
+	bottom: -1px;
+	left:0px;
+	background-color: rgb(43 16 65);
+	width: 0%;
+	height: 3px;
+	transition: 0.4s ease-in-out;
+}
+
+.nav-item:hover .nav-link::after{
+	width: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #009acd; /* Medium blue header text */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: rgb(0 78 131); /* Medium blue line */
+    margin: 2rem 0;
+}
+.img-container {
+    flex: 0 0 auto;
+    margin-right: 20px; /* Space between image and text */
+    align-self: center; /* Center the image vertically */
+}
+
+
+  img {
+    width: 300px; /* Increase image size */
+    height: 400px; /* Increase image size */
+    border-radius: 20px; /* Slightly rounded corners for a more professional look */
+    border: 3px solid rgb(0 78 131); /* Border to match the theme */
+    display: block; /* Ensure image is a block element */
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+    height: calc(100vh - 200px); /* Center the content vertically */
+}
+
+.info-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the left */
+}
+
+.additional-info {
+    background-color: #80bde8; /* Light blue background for additional info */
+    padding: 1rem;
+    border-radius: 5px;
+    border: 2px solid rgb(0 78 131); /* Border to match the theme */
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .img-container {
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+
+    .info-container {
+        align-items: center;
+        text-align: center;
+    }
+
+    pre, .additional-info {
+        text-align: center;
+    }
+}

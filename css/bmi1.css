@@ -1,0 +1,97 @@
+ body 
+{
+   font-family: Arial, sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+   background-color: #a1c4dc;
+}
+
+.calculator 
+{
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+label 
+{
+  display: block;
+  margin-top: 10px;
+}
+
+input 
+{
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+button 
+{
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+}
+
+button:hover 
+{
+ background-color: #2980b9;
+}
+
+#result 
+{
+ margin-top: 20px;
+ font-weight: bold;
+}
+	
+.navbar
+{
+	padding: 15px 18px !important;
+}
+
+.logo
+{
+	font-weight: 600;
+	color: rgb(12 14 65) !important;
+}
+
+.nav-item
+{
+	margin: 0px 10px;
+
+}
+
+.nav-item .nav-link
+{
+	color: rgb(0 78 131);
+	font-size: 14px;
+	font-weight: 500;
+	position: relative;
+}
+
+.nav-link::after
+{
+	content: '';
+	position:absolute;
+	bottom: -1px;
+	left:0px;
+	background-color: rgb(43 16 65);
+	width: 0%;
+	height: 3px;
+	transition: 0.4s ease-in-out;
+}
+
+.nav-item:hover .nav-link::after
+{
+	width: 100%;
+}

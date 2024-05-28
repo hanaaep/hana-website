@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
+*{
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	font-family: 'Poppins' , sans-serif;
+	color: white;
+}
+
+body{
+	background: url(image/wallpaper.jpg);
+        background-size: cover;
+        background-position: center;
+	
+}
+
+.header{
+  height: 100vh;
+  width: 100%;
+}
+
+.navbar
+{       
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: transparent;
+        text-align: center;
+	padding: 15px 18px !important; 
+        z-index: 1000;
+}
+
+.logo{
+	font-weight: 600;
+	color: rgb(12 14 65) !important;
+}
+
+.nav-item
+{
+	margin: 0px 10px;
+
+}
+.nav-item .nav-link
+{
+	color: rgb(0 78 131);
+	font-size: 14px;
+	font-weight: 500;
+	position: relative;
+}
+
+.nav-link::after{
+	content: '';
+	position:absolute;
+	bottom: -1px;
+	left:0px;
+	background-color: rgb(43 16 65);
+	width: 0%;
+	height: 3px;
+	transition: 0.4s ease-in-out;
+}
+.nav-item:hover .nav-link::after{
+	width: 100%;
+}
+.nav-item .nav-link
+{
+	color: rgb(0 78 131);
+	font-size: 14px;
+	font-weight: 500;
+	position: relative;
+}
+
+.navbar-nav {
+    margin-left: auto; 
+}
+
+.services{
+    height: auto;
+    padding: 50px 100px;
+}
+
+.heading_service_container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading_service_title{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(0 0 43);
+	margin-top: 80px;
+}
+
+.heading_service{
+    font-size: 30px;
+    font-weight: 700;
+    color: #586a9b;
+    margin: 15px 0px;
+	margin-bottom: 0px;
+}
+
+.para_services{
+    font-size: 13px;
+    font-weight: 500;
+    color: #586a9b;
+    text-align: center;
+    max-width: 42%;
+    display: block;
+    line-height: 24px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.para_services::after
+{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: rgb(0 0 43);
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content-service{
+    width: 100%;
+    height: 350px;
+    background-color:  #ffffff;
+    padding: 0px 30px;
+}
+
+.icon_service{
+    width: 100px;
+    margin-bottom: -20px;
+}
+
+.heading_content_service{
+    color: #586a9b;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+.para_content_service{
+    font-size: 14px;
+    color: rgb(71 71 71 / 62%);
+    font-weight: 500;
+    line-height: 25px;
+    margin: 0px;
+}
